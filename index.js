@@ -201,10 +201,10 @@ function CuboidMaker(att){
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 
 class CuboidMakerTwo{
-  constructor(length, width,height){
-  this.length = length;
-  this.width = width;
-  this.height = height;
+  constructor(att){
+  this.length = att.length;
+  this.width = att.width;
+  this.height = att.height;
 }
 surfaceArea(){
   return 2 * (this.length * this.width + this.length * this.height + this.width * this.height)
